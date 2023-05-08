@@ -42,7 +42,7 @@
           @if ($users->count())
             @foreach ($users as $user)
               
-              <div class="col-md-6 col-lg-3">
+              <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card">
                   @if (auth()->user()->role == 'admin')
                     @if (auth()->user()->id == $user->id)

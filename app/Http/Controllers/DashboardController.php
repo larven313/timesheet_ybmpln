@@ -174,9 +174,18 @@ class DashboardController extends Controller
 
         $total_departemen = Department::count();
         $total_jabatan = Position::count();
-        $total_aktivitas = Activity::with(['user', 'notification', 'type'])
+        if (auth()->user()->role === 'user') {
+            $total_aktivitas = Activity::with(['user', 'notification', 'type'])
+            ->where('user_id',auth()->user()->id)
             ->whereDate('activities.date', Carbon::today())
             ->count();
+        } else {
+            $total_aktivitas = Activity::with(['user', 'notification', 'type'])
+            ->whereDate('activities.date', Carbon::today())
+            ->count();
+        }
+        
+
         $total_aktivitas_user = Activity::with(['user', 'notification', 'type'])
             ->where('user_id', auth()->user()->id)
             ->whereDate('activities.date', Carbon::today())
