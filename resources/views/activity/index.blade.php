@@ -13,7 +13,7 @@
         <div class="row g-2 align-items-center">
           <div class="col">
             <h2 class="page-title">
-              Aktivitas pegawai
+              Aktivitas pegawai {{ $activities[0]->name }}
             </h2>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -122,7 +122,7 @@
             <div class="empty">
               <div class="empty-img"><img src="./static/illustrations/undraw_quitting_time_dm8t.svg" height="128"  alt="">
               </div>
-              <p class="empty-title">Oops… Aktivitas tidak ada</p>
+              <p class="empty-title">Oops… Aktivitas tidak ditemukan</p>
               <p class="empty-subtitle text-muted">
                 Yuk tuliskan aktivitasmu!
               </p>

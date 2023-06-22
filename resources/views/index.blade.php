@@ -370,46 +370,29 @@
               <div class="card card-sm">
                 <div class="card-body">
                   <div class="row align-items-center">
-                  @if (count($activities) > 0 && $activities[0]->time !== null)
-                  <div class="col-auto">
-                      @if ($activities[0]->time < 8 )
+                    <div class="col-auto">
+                        @if ($activities[0]->time < 8 )
                         <span class="bg-red text-white avatar">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M7 4l10 16"></path>
-                            <path d="M17 4l-10 16"></path>
-                          </svg>
-                        </span>
-                      @else
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M7 4l10 16"></path>
+                          <path d="M17 4l-10 16"></path>
+                       </svg>
+                        @else
                         <span class="bg-green text-white avatar">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M5 12l5 5l10 -10"></path>
-                          </svg>
-                        </span>
-                      @endif
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M5 12l5 5l10 -10"></path>
+                       </svg>
+                        @endif
+  
+                      </span>
                     </div>
                     <div class="col">
                       <div class="font-weight-medium">
                         Hari ini {{ $activities[0]->time < 8 ? 'Tidak tuntas' : 'Tuntas' }}
                       </div>
                     </div>
-                    @else
-                    <div class="col-auto">
-                        <span class="bg-red text-white avatar">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-letter-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M7 4l10 16"></path>
-                            <path d="M17 4l-10 16"></path>
-                          </svg>
-                        </span>
-                    </div>
-                    <div class="col">
-                      <div class="font-weight-medium">
-                        Hari ini Tidak Tuntas
-                      </div>
-                    </div>
-                    @endif
                   </div>
                 </div>
               </div>
@@ -419,14 +402,8 @@
                 <div class="card-body">
                   <div class="row align-items-center">
                     <div class="col-auto">
-                      <span class="bg-green text-white avatar">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-checklist" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                          <path d="M9.615 20h-2.615a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8"></path>
-                          <path d="M14 19l2 2l4 -4"></path>
-                          <path d="M9 8h4"></path>
-                          <path d="M9 12h2"></path>
-                       </svg>
+                      <span class="bg-facebook text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/brand-facebook -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
                       </span>
                     </div>
                     <div class="col">

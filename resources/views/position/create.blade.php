@@ -42,8 +42,8 @@
                             </div>
                         </div>
                       <div class="form-footer float-end">
-                        <button type="reset" class="btn btn-white">Reset</button>
                         <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-white">Reset</button>
                       </div>
                     </form>
                   </div>
